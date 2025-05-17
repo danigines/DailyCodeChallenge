@@ -1,0 +1,28 @@
+{
+  "name": "Dashboard",
+  "metadata": {
+    "type": "view"
+  },
+  "children": [
+    {
+      "name": "Header",
+      "metadata": {
+        "component": "UIHeader"
+      }
+    },
+    {
+      "name": "Content",
+      "metadata": {
+        "component": "ListView"
+      },
+      "children": [
+        {
+          "name": "Item1"
+        },
+        {
+          "name": "Item2"
+        }
+      ]
+    }
+  ]
+}

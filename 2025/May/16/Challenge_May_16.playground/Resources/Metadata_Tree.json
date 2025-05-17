@@ -1,0 +1,13 @@
+{
+  "id": "A",
+  "label": "root",
+  "weight": 1.0,
+  "left": {
+    "id": "B",
+    "label": "left",
+    "weight": 0.5,
+    "left": null,
+    "right": null
+  },
+  "right": null
+}

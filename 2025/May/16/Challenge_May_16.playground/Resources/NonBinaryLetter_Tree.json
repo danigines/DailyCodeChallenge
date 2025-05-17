@@ -1,0 +1,22 @@
+{
+  "val": "A",
+  "children": [
+    {
+      "val": "B",
+      "children": [
+        {
+	  "val": "E"
+        },
+        {
+          "val": "F"
+        }
+      ]
+    },
+    {
+      "val": "C"
+    },
+    {
+      "val": "D"
+    }
+  ]
+}

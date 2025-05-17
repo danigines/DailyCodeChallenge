@@ -1,0 +1,12 @@
+{
+  "val" : "root",
+  "left" : {
+    "val" : "left",
+    "left" : {
+      "val" : "left.left"
+    }
+  },
+  "right" : {
+    "val" : "right"
+  }
+}
