@@ -6,7 +6,7 @@ public struct NonBinarySolutionTests {
     let nodeLocalSerialized = CodableAlternativeSolution.serialize(nodeLocal)
     let nodeLocalDeserialized = CodableAlternativeSolution.deserialize(nodeLocalSerialized, as: NaryNode.self)
     let isEqualNodeLocal = nodeLocalDeserialized == nodeLocal
-    let childrenValueInChildrenNodeAreEquals = nodeLocalDeserialized?.children![0].children == [NaryNode("E"), NaryNode("F")]
+    let childrenValueInChildrenNodeAreEquals = nodeLocalDeserialized?.children?[0].children == [NaryNode("E"), NaryNode("F")]
     print("\n\n🟠 Non Binary Solution -> Node by init: \(nodeLocal)")
     print("  ➡️ Serialized Node: \(String(describing: nodeLocalSerialized))")
     print("  ➡️ Deserialized Node: \(String(describing: nodeLocalDeserialized))")

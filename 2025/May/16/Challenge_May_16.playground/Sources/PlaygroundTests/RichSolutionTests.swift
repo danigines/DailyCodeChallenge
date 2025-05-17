@@ -6,7 +6,7 @@ public struct RichSolutionTests {
     let nodeLocalSerialized = CodableAlternativeSolution.serialize(nodeLocal)
     let nodeLocalDeserialized = CodableAlternativeSolution.deserialize(nodeLocalSerialized, as: RichNode.self)
     let isEqualNodeLocal = nodeLocalDeserialized == nodeLocal
-    let childrenValueInChildrenNodeAreEquals = nodeLocalDeserialized?.children[0].name == "Header"
+    let childrenValueInChildrenNodeAreEquals = nodeLocalDeserialized?.children?[0].name == "Header"
     print("\n\n🟣 Rich Solution -> Node by init: \(nodeLocal)")
     print("  ➡️ Serialized Node: \(String(describing: nodeLocalSerialized))")
     print("  ➡️ Deserialized Node: \(String(describing: nodeLocalDeserialized))")
@@ -17,7 +17,7 @@ public struct RichSolutionTests {
     let nodeJSONSerialized = CodableAlternativeSolution.serialize(nodeJSON)
     let nodeJSONDeserialized = CodableAlternativeSolution.deserialize(nodeLocalSerialized, as: RichNode.self)
     let isEqualNodeJSON = nodeJSONDeserialized == nodeJSON
-    let childrenValueInChildrenJSONAreEquals = nodeLocalDeserialized?.children[0].name == "Header"
+    let childrenValueInChildrenJSONAreEquals = nodeLocalDeserialized?.children?[0].name == "Header"
     print("🟣 Rich Solution -> Node by JSON: \(String(describing: nodeJSON))")
     print("  ➡️ Serialized Node: \(String(describing: nodeJSONSerialized))")
     print("  ➡️ Deserialized Node: \(String(describing: nodeJSONDeserialized))")

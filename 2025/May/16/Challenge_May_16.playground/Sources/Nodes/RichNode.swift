@@ -3,13 +3,13 @@ import Foundation
 // MARK: - Rich N-ary Tree Node with Metadata
 public class RichNode: Codable, Equatable {
   public var name: String
-  public var metadata: [String: String]
-  public var children: [RichNode]
+  public var metadata: [String: String]?
+  public var children: [RichNode]?
 
   public init(
     name: String,
-    metadata: [String: String] = [:],
-    children: [RichNode] = []
+    metadata: [String: String]? = nil,
+    children: [RichNode]? = nil
   ) {
     self.name = name
     self.metadata = metadata
