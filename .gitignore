@@ -1,0 +1,33 @@
+# Xcode
+.DS_Store
+.idea/
+.vscode/
+xcuserdata/
+*.xcuserstate
+*.swp
+
+# Build
+build/
+DerivedData/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+
+# Archive
+*.xarchive
+
+# Logs
+*.log
+
+# User-specific
+*.xcscheme
+*.xccheckout
+*.xcodeproj/project.xcworkspace/
